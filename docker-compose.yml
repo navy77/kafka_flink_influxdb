@@ -92,7 +92,6 @@ services:
       KAFKA_NUM_PARTITIONS: 1
       KAFKA_LOG_RETENTION_HOURS: 48
 
-
   kafka-3:
     image: apache/kafka:latest
     hostname: kafka-3
@@ -117,8 +116,8 @@ services:
       KAFKA_NUM_PARTITIONS: 1
       KAFKA_LOG_RETENTION_HOURS: 48
 
-# volumes:
-#   influxdb_data:
-#   mosquitto_config:
-#   mosquitto_data:
-#   mosquitto_log:
+volumes:
+  influxdb_data:
+  mosquitto_config:
+  mosquitto_data:
+  mosquitto_log:
